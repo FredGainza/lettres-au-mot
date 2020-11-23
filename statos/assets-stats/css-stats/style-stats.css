@@ -1,0 +1,750 @@
+body {
+    background-color: #fcfcfa !important;
+}
+
+* {
+    font-family: 'Lato', sans-serif;
+    font-size: .9rem;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+#layoutDefault {
+    display: -webkit-box;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    margin-bottom: -2rem !important;
+}
+
+#layoutDefault2 {
+    display: -webkit-box;
+    display: flex !important;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    margin-bottom: -2.5rem !important;
+}
+
+#layoutDefault #layoutDefault_content {
+    min-width: 0 !important;
+    -webkit-box-flex: 1;
+    flex-grow: 1 !important;
+}
+
+#layoutDefault #layoutDefault_footer {
+    min-width: 0 !important;
+}
+
+.hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.loader-results {
+    background: url('../../../img/loader-bdd.svg') 50% 50% no-repeat #8b9198d9;
+    cursor: wait;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+
+}
+
+.loader {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 100px auto;
+    width: 1em;
+    height: 1em;
+    border-radius: 50%;
+    position: relative;
+    text-indent: -9999em;
+    -webkit-animation: load4 1.3s infinite linear;
+    animation: load4 1.3s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+@-webkit-keyframes load4 {
+
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+@keyframes load4 {
+
+    0%,
+    100% {
+        box-shadow: 0 -3em 0 0.2em, 2em -2em 0 0em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 0;
+    }
+
+    12.5% {
+        box-shadow: 0 -3em 0 0, 2em -2em 0 0.2em, 3em 0 0 0, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+
+    25% {
+        box-shadow: 0 -3em 0 -0.5em, 2em -2em 0 0, 3em 0 0 0.2em, 2em 2em 0 0, 0 3em 0 -1em, -2em 2em 0 -1em, -3em 0 0 -1em, -2em -2em 0 -1em;
+    }
+
+    37.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 0, 2em 2em 0 0.2em, 0 3em 0 0em, -2em 2em 0 -1em, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    50% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 0em, 0 3em 0 0.2em, -2em 2em 0 0, -3em 0em 0 -1em, -2em -2em 0 -1em;
+    }
+
+    62.5% {
+        box-shadow: 0 -3em 0 -1em, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 0, -2em 2em 0 0.2em, -3em 0 0 0, -2em -2em 0 -1em;
+    }
+
+    75% {
+        box-shadow: 0em -3em 0 -1em, 2em -2em 0 -1em, 3em 0em 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0.2em, -2em -2em 0 0;
+    }
+
+    87.5% {
+        box-shadow: 0em -3em 0 0, 2em -2em 0 -1em, 3em 0 0 -1em, 2em 2em 0 -1em, 0 3em 0 -1em, -2em 2em 0 0, -3em 0em 0 0, -2em -2em 0 0.2em;
+    }
+}
+
+.center-loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.transparent-background {
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.loader-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+h1.mentions-legales {
+    font-size: 1.3rem;
+    margin-bottom: 0 !important;
+}
+
+/* 
+####################################################
+******   FONTS 									****
+####################################################
+*/
+
+@font-face {
+    font-family: 'milkshakeregular';
+    src: url('../../../assets/fonts/milkshake/milkshake-webfont.woff2') format('woff2'),
+        url('../../../assets/fonts/milkshake/milkshake-webfont.woff') format('woff'),
+        url('../../../assets/fonts/milkshake/milkshake-webfont.ttf') format('truetype'),
+        url('../../../assets/fonts/milkshake/milkshake-webfont.svg#milkshakeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('../../../assets/fonts/opensans_regular/OpenSans-Regular-webfont.eot');
+    src: url('../../../assets/fonts/opensans_regular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/opensans_regular/OpenSans-Regular-webfont.woff2') format('woff2'),
+        url('../../../assets/fonts/opensans_regular/OpenSans-Regular-webfont.woff') format('woff'),
+        url('../../../assets/fonts/opensans_regular/OpenSans-Regular-webfont.ttf') format('truetype'),
+        url('../../../assets/fonts/opensans_regular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('../../../assets/fonts/opensans_bold/OpenSans-Bold-webfont.eot');
+    src: url('../../../assets/fonts/opensans_bold/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/opensans_bold/OpenSans-Bold-webfont.woff2') format('woff2'),
+        url('../../../assets/fonts/opensans_bold/OpenSans-Bold-webfont.woff') format('woff'),
+        url('../../../assets/fonts/opensans_bold/OpenSans-Bold-webfont.ttf') format('truetype'),
+        url('../../../assets/fonts/opensans_bold/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('../../../assets/fonts/roboto_regular/Roboto-Regular-webfont.eot');
+    src: url('../../../assets/fonts/roboto_regular/Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/roboto_regular/Roboto-Regular-webfont.woff2') format('woff2'),
+        url('../../../assets/fonts/roboto_regular/Roboto-Regular-webfont.woff') format('woff'),
+        url('../../../assets/fonts/roboto_regular/Roboto-Regular-webfont.ttf') format('truetype'),
+        url('../../../assets/fonts/roboto_regular/Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'robotobold';
+    src: url('../../../assets/fonts/roboto_bold/Roboto-Bold-webfont.eot');
+    src: url('../../../assets/fonts/roboto_bold/Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../../../assets/fonts/roboto_bold/Roboto-Bold-webfont.woff2') format('woff2'),
+        url('../../../assets/fonts/roboto_bold/Roboto-Bold-webfont.woff') format('woff'),
+        url('../../../assets/fonts/roboto_bold/Roboto-Bold-webfont.ttf') format('truetype'),
+        url('../../../assets/fonts/roboto_bold/Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-Thin.otf");
+    src: url("../../../assets/fonts/metropolis/Metropolis-Thin.otf");
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-ThinItalic.otf");
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-ExtraLight.otf");
+    font-weight: 200;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-ExtraLightItalic.otf");
+    font-weight: 200;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-Light.otf");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-LightItalic.otf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-Regular.otf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-RegularItalic.otf");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-Medium.otf");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-MediumItalic.otf");
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-SemiBold.otf");
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-SemiBoldItalic.otf");
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-Bold.otf");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-BoldItalic.otf");
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-ExtraBold.otf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-ExtraBoldItalic.otf");
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-Black.otf");
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Metropolis";
+    src: url("../../../assets/fonts/metropolis/Metropolis-BlackItalic.otf");
+    font-weight: 800;
+    font-style: italic;
+}
+
+body {
+    width: 100vw;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    background-color: #eeeeee;
+}
+
+/************ Partie Text ************/
+.fz-110r {
+    font-size: 1.1rem;
+}
+
+.fz-table {
+    font-size: .9rem;
+}
+
+.titre-logo {
+    font-family: milkshakeregular, serif !important;
+    font-size: 1.4rem !important;
+    color: #ececee !important;
+    display: inline-block;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+.w-50-resp2 {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+.fg-0 {
+    flex-grow: 0 !important;
+}
+
+/* 
+####################################################
+******   COLORS									****
+####################################################
+*/
+.nav-bg {
+    background-color: #003049 !important;
+}
+
+.text-orange {
+    color: #264348 !important;
+}
+
+.card.bg-pers {
+    background-color: #41d3c514 !important;
+}
+
+.color-header {
+    color: #c00c0c !important;
+}
+
+.text-white-red {
+    color: #e1d3d3ed !important;
+    font-weight: 300 !important;
+}
+
+.text-white-blue {
+    color: #e6f0f4 !important;
+    font-weight: 300 !important;
+}
+
+.text-trou {
+    color: red !important;
+}
+
+.color-perso-danger {
+    color: tomato !important;
+    border: 1px solid #D32F2F !important;
+}
+
+.color-perso-success {
+    color: green !important;
+    border: 1px solid #43A047 !important;
+}
+
+.nbBig {
+    font-size: 110% !important;
+    color: hsl(202, 80%, 29%) !important;
+}
+
+.text-blue {
+    color: #1b72d0 !important;
+}
+
+.text-blue2 {
+    color: #094381 !important;
+}
+
+.btn-danger-pers {
+    color: #ffffffe6;
+    background-color: rgba(133, 153, 157, 0.72);
+}
+
+.btn-success-pers {
+    color: #ffffffe6;
+    background-color: #64b4cea3;
+}
+
+.bg-text-form {
+    background-color: #2bba9e;
+    color: #292f32;
+    border: 2px solid #2ab296;
+    box-shadow: 0px 0px 13px 0px rgba(60, 68, 66, 0.6);
+}
+
+.text-ocre {
+    color: #d8d393;
+}
+
+
+
+/*#############  PUCES  ################*/
+.icon::before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.explications::before {
+    font-size: 1rem;
+    content: "\f064";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    margin-left: 1rem;
+    margin-right: .75rem;
+    color: #032e4e;
+}
+
+.parametres::before {
+    content: "\f138";
+    color: #4A5459;
+    display: inline-block;
+    margin-right: .5rem;
+    font-size: .8rem;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+}
+
+.lh-15 {
+    line-height: 1.5 !important;
+}
+
+.lh-12 {
+    line-height: 1.2 !important;
+}
+
+.vertical-text-top {
+    vertical-align: text-top;
+}
+
+
+
+/* 
+####################################################
+******   NAVBAR									****
+####################################################
+*/
+.navbar {
+    padding: 0 1rem !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #f6f8f9 !important;
+    padding: 1rem 1rem !important;
+}
+
+.navbar-light .navbar-nav .nav-active {
+    display: block;
+    background-color: rgba(12, 86, 111, 1) !important;
+    padding: 1rem 1rem !important;
+    font-family: "Metropolis", sans-serif !important;
+    color: #def1f7 !important;
+}
+
+.navbar-light .navbar-nav .nav-active:hover,
+.navbar-light .navbar-nav .nav-active:active {
+    background-color: rgba(16, 137, 177, 0.5) !important;
+    text-decoration: none !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.navbar-light .navbar-nav .nav-link:active {
+    background-color: rgba(12, 86, 111, .6) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:checked {
+    color: #12a57e !important;
+    border-bottom: 1px solid #0c7358 !important;
+}
+
+.navbar-light .navbar-toggler {
+    padding: 0 0.2rem 0.1rem 0.2rem !important;
+    color: rgba(234, 235, 235, 0.91) !important;
+    border-color: rgba(210, 213, 213, 0.3) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(236, 238, 238, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
+}
+
+.navbar {
+    padding: 0 !important
+}
+
+.navbar-collapse ul li a {
+    font-size: .9rem !important;
+}
+
+button .navbar-toggler:focus {
+    outline: none !important;
+}
+
+.navbar-toggler:focus {
+    outline: 1px !important;
+}
+
+
+/*######################	START - MENU HAMBURGER 	######################*/
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #169c74 !important;
+}
+
+.dropdown-item.active:hover,
+.dropdown-item.active:active {
+    background-color: #169c74d1 !important;
+}
+
+.dropdown-item {
+    padding: 1rem 1.5rem !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus,
+.dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background-color: #308d71;
+}
+
+.dropdown-divider {
+    margin: 0 !important;
+}
+
+.dropdown-divider-perso {
+    margin: 0 !important;
+    height: .1rem;
+    overflow: hidden;
+    background-color: #6c8a68;
+}
+
+.dropdown-menu {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.bg-menu {
+    background-color: #07405f;
+    border-radius: 0;
+}
+
+/*######################	END - MENU HAMBURGER 	######################*/
+
+
+/*######################	START - BAR TABLES LINKS 	######################*/
+.list-group {
+    border-radius: 0 !important;
+}
+
+a.link-tables,
+.link-li-tables {
+    color: whitesmoke !important;
+    text-decoration: none !important;
+}
+
+.list-group,
+.link-li-tables {
+    background-color: #003049 !important;
+    /* background-color: #36393a !important; */
+}
+
+.list-group {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.link-li-tables:hover,
+.link-li-tables:hover a.link-tables {
+    color: #40484a !important;
+    text-decoration: none !important;
+}
+
+.link-li-tables:hover {
+    background-color: #ecedee !important;
+}
+
+.list-group-item.active {
+    background-color: #dadddb !important;
+    color: #262a2b !important;
+    font-weight: 700;
+    border-top: 1px solid #003049;
+    border-left: 1px solid #003049;
+    border-right: 1px solid #003049;
+    border-bottom: 1px solid #dadddb !important;
+}
+
+a.link-tables li {
+    border-radius: 0 !important;
+}
+
+.list-group-item {
+    border: 1px solid rgba(200, 195, 195, 0.2) !important;
+    padding: .35rem .5rem !important;
+}
+
+/*######################	END - BAR TABLES LINKS 	######################*/
+
+
+
+
+@media (min-width: 768) {
+    .list-group-item {
+        padding: .5rem .75rem !important;
+    }
+
+    .fz-table {
+        font-size: .95rem;
+    }
+}
+
+
+@media (min-width: 990px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .fz-table {
+        font-size: 1rem;
+    }
+
+    .titre-logo {
+        font-size: 1.75rem !important;
+        padding-top: .15rem;
+        padding-bottom: .15rem;
+        margin-right: 1rem;
+        margin-left: 3rem;
+    }
+
+    .w-50-resp2 {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+
+    .bg-menu {
+        background-color: #003049 !important;
+        border-radius: 0 !important;
+    }
+
+    .list-group-item {
+        padding: .75rem 1.25rem !important;
+    }
+
+    a.link-tables li {
+        border-radius: 0.75rem .75rem 0 0 !important;
+    }
+}

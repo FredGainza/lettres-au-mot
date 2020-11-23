@@ -1,0 +1,168 @@
+body {
+    width: 100vw;
+    margin: 0 auto;
+    font-family: 'Lato', sans-serif;
+    background-color: #eeeeee;
+}
+*{
+    font-size: .9rem;
+}
+.w-90i{
+    width: 90% !important;
+}
+
+/************ Partie Text ************/
+.fz-110r-f{
+    font-size: 1rem;
+}
+.titre-logo {
+    font-family: milkshakeregular, serif !important;
+    font-size: 1.4rem !important;
+    color: #ececee !important;
+    display: inline-block;
+    padding-top: .15rem;
+    padding-bottom: .15rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+h3.titre-table{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-bottom: 1px solid #1f24281c;
+}
+.w-50-resp2 {
+    width: 90%;
+    margin-bottom: 1rem;
+}
+
+/************ Partie Select ************/
+.col-form-label-lg {
+    padding-top: 0 !important;
+}
+.custom-select {
+    height: 2.2rem !important;
+    padding: 0rem 1.5rem 0 .5rem;
+}
+.col-form-label-lg {
+    padding-bottom: 0 !important;
+    padding-right: .75rem !important;
+    font-size: 1rem !important;
+}
+.form-select {
+    margin-bottom: 0 !important;
+}
+.form-select-up {
+    margin-bottom: .5rem !important;
+}
+.pady-0-1{
+    padding-top: .1rem !important;
+    padding-bottom: .1rem !important;
+}
+
+/************ Partie Pagination ************/
+.pagination>li>a {
+    background-color: white;
+    color: #181a1b !important;
+}
+.pagination>li>a:focus,
+.pagination>li>a:hover,
+.pagination>li>span:focus,
+.pagination>li>span:hover {
+    color: #1f2428 !important;
+    background-color: #eee !important;
+    border-color: #ddd !important;
+}
+.pagination>.active>a {
+    color: white !important;
+    background-color: #1f2428 !important;
+    border: solid 1px #1f2428 !important;
+}
+.pagination>.active>a:hover {
+    color: #f0f0f0 !important;
+    background-color: #1f2428de !important;
+    border: solid 1px #1f2428e8 !important;
+}
+.page-item.disabled a {
+    background-color: #eeededdb !important;
+}
+
+/************ Partie Tableau ************/
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+table > thead > tr > th {
+    white-space: nowrap !important; 
+}
+th > a {
+    color: white !important;
+    text-decoration: none !important;
+    background-color: transparent !important;
+}
+th {
+    background-color: #242424ed;
+    color: white;
+    text-align: right;
+    font-weight: 300;
+    font-size: .9rem;
+    padding: 1rem;
+}
+td {
+    text-align: right;
+    width: auto;
+    padding: .25rem .75rem;
+    font-size: .9rem;
+    background-color: #fcfcfc !important;
+}
+tbody, tbody tr{
+    font-size: .9rem;
+}
+td p {
+    margin-bottom: 0 !important;
+}
+tr > .border-bot{border-bottom: 1px solid #bfbfbf !important;}
+
+/************ Partie Tri ************/
+.color-darky {
+    color: #292b2c
+}
+tr .select_col {
+    background-color: #4f6278ed !important;
+}
+
+
+
+@media (min-width: 990px){
+    *{
+        font-size: 1rem;
+    }
+    .fz-110r-f{
+        font-size: 1.1rem;
+    }
+    .titre-logo {
+        font-size: 1.75rem !important;
+        padding-top: .15rem;
+        padding-bottom: .15rem;
+        margin-right: 1rem;
+        margin-left: 3rem;
+    }
+    .w-50-resp2 {
+        width: 100% !important;
+        margin-bottom: 0 !important;
+    }
+    h3.titre-table{
+        font-size: 1.6rem;
+
+    }
+    .col-form-label-lg {
+        font-size: 1.1rem !important;
+    }
+    tbody, tbody tr, th, td {
+        font-size: .95rem;
+    }
+}

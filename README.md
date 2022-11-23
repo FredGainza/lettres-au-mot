@@ -24,4 +24,4 @@ Les outils présents sur ce site sont une aide pour tous les jeux de lettres : s
 
 ## UPDATE
 
-* 23/11/2010 : Ajout de 4 langues au choix + fix divers bugs
+* 23/11/2020 : Ajout de 4 langues au choix + fix divers bugs

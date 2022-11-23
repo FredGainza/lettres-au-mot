@@ -1,14 +1,12 @@
-# lettres-mot
+# lettres-au-mot
 
 Site d'aide à la résolution de jeux de lettres.
 
 Les outils présents sur ce site sont une aide pour tous les jeux de lettres : scrabble, mots fléchés, anagrammes, mots à trous...
 
-[![Lettres au Mot](https://lettres-au-mot.fr/assets/img/lettres-au-mot.png)](https://lettres-au-mot.fr)
-
 ## Lien
 
-[Lettres au Mot](https://lettres-au-mot.fr)
+[![Lettres au Mot](https://lettres-au-mot.fr/assets/img/favicon-letters/favicon-14x14.png)](https://lettres-au-mot.fr) [Lettres au Mot](https://lettres-au-mot.fr)
 
 ## Fonctionnalités
 
